@@ -78,7 +78,43 @@
                     <view key="view" contentMode="scaleToFill" id="fe0-d8-6Ul">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="95" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9x6-KQ-gF3">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="95" id="zGj-gS-nK6">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="95"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zGj-gS-nK6" id="lQQ-pg-pu3">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="94"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vPg-QB-xKT">
+                                                    <rect key="frame" x="8" y="8" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="vPg-QB-xKT" secondAttribute="bottom" constant="8" id="8bk-oS-8Jo"/>
+                                                <constraint firstAttribute="trailing" secondItem="vPg-QB-xKT" secondAttribute="trailing" constant="8" id="9cP-Wv-9po"/>
+                                                <constraint firstItem="vPg-QB-xKT" firstAttribute="leading" secondItem="lQQ-pg-pu3" secondAttribute="leading" constant="8" id="Nva-jq-0eP"/>
+                                                <constraint firstItem="vPg-QB-xKT" firstAttribute="top" secondItem="lQQ-pg-pu3" secondAttribute="top" constant="8" id="gPH-df-HXM"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="9x6-KQ-gF3" secondAttribute="trailing" id="4mh-X4-Uku"/>
+                            <constraint firstItem="9x6-KQ-gF3" firstAttribute="leading" secondItem="fe0-d8-6Ul" secondAttribute="leading" id="5J2-jH-feb"/>
+                            <constraint firstItem="6d2-SL-tBL" firstAttribute="top" secondItem="9x6-KQ-gF3" secondAttribute="bottom" id="Kwp-Cw-1jv"/>
+                            <constraint firstItem="9x6-KQ-gF3" firstAttribute="top" secondItem="CP3-Im-SyH" secondAttribute="bottom" id="t1M-xF-8sZ"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Chat" id="khK-ou-Er6">
                         <barButtonItem key="leftBarButtonItem" systemItem="compose" id="hiJ-C2-lid"/>
@@ -86,7 +122,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CTV-1O-gwf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1703" y="137"/>
+            <point key="canvasLocation" x="1631.2" y="137.18140929535232"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pze-eK-pBR">
