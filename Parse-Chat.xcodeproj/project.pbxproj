@@ -13,6 +13,7 @@
 		89E020B91E5D0CEC00CD5499 /* Parse_Chat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 89E020B71E5D0CEC00CD5499 /* Parse_Chat.xcdatamodeld */; };
 		89E020BB1E5D0CEC00CD5499 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89E020BA1E5D0CEC00CD5499 /* Assets.xcassets */; };
 		89E020BE1E5D0CEC00CD5499 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89E020BC1E5D0CEC00CD5499 /* LaunchScreen.storyboard */; };
+		89E020C61E5D122700CD5499 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E020C51E5D122700CD5499 /* ChatViewController.swift */; };
 		B761701AB82C34871A8F4D56 /* Pods_Parse_Chat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3929B4BFB1BA5040D0674F84 /* Pods_Parse_Chat.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		89E020BA1E5D0CEC00CD5499 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89E020BD1E5D0CEC00CD5499 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89E020BF1E5D0CEC00CD5499 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89E020C51E5D122700CD5499 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		CFBC5C0AA2298F93E11B465F /* Pods-Parse-Chat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parse-Chat.release.xcconfig"; path = "Pods/Target Support Files/Pods-Parse-Chat/Pods-Parse-Chat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,6 +80,7 @@
 				89E020BC1E5D0CEC00CD5499 /* LaunchScreen.storyboard */,
 				89E020BF1E5D0CEC00CD5499 /* Info.plist */,
 				89E020B71E5D0CEC00CD5499 /* Parse_Chat.xcdatamodeld */,
+				89E020C51E5D122700CD5499 /* ChatViewController.swift */,
 			);
 			path = "Parse-Chat";
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 			files = (
 				89E020B91E5D0CEC00CD5499 /* Parse_Chat.xcdatamodeld in Sources */,
 				89E020B31E5D0CEC00CD5499 /* LoginViewController.swift in Sources */,
+				89E020C61E5D122700CD5499 /* ChatViewController.swift in Sources */,
 				89E020B11E5D0CEC00CD5499 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
