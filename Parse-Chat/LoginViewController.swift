@@ -14,7 +14,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
-    let user = PFUser()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +23,7 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func signUp(_ sender: UIButton) {
+        let user = PFUser()
         user.username = emailTextField.text
         user.password = passwordTextField.text
         
@@ -44,6 +45,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func login(_ sender: UIButton) {
+        let user = PFUser()
         let username = emailTextField.text!
         let password = passwordTextField.text!
         
