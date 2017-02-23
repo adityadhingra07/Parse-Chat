@@ -1,15 +1,18 @@
 PODS:
   - Bolts/Tasks (1.8.4)
+  - NextGrowingTextView (0.8.5)
   - Parse (1.14.2):
     - Bolts/Tasks (~> 1.8)
 
 DEPENDENCIES:
+  - NextGrowingTextView
   - Parse
 
 SPEC CHECKSUMS:
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
+  NextGrowingTextView: 3cc930a03c5979071244af42bcc81360d7453323
   Parse: 4335d65f40cb3d43190d723144bbe1afb9c38230
 
-PODFILE CHECKSUM: aea8b54f448bf8f3996b5eebf5f310271f6636e2
+PODFILE CHECKSUM: 87f0d96a665066db7796e8737872c2e4b02966b8
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.2.0

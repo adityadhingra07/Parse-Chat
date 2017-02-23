@@ -7,4 +7,5 @@ target 'Parse-Chat' do
 
   # Pods for Parse-Chat
   pod 'Parse'
+  pod 'NextGrowingTextView'
 end
