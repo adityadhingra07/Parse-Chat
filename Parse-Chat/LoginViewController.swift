@@ -38,14 +38,13 @@ class LoginViewController: UIViewController {
                 }
             } else {
                 // Hooray! Let them use the app now.
-                print("Signed up!");
-                
+                NSLog("Signed up!")
+                self.performSegue(withIdentifier: "ChatViewControllerSegue", sender: self)
             }
         }
     }
     
     @IBAction func login(_ sender: UIButton) {
-        let user = PFUser()
         let username = emailTextField.text!
         let password = passwordTextField.text!
         
@@ -60,6 +59,7 @@ class LoginViewController: UIViewController {
             } else {
                 // Hooray! Let them use the app now.
                 NSLog("Logged in!");
+                self.performSegue(withIdentifier: "ChatViewControllerSegue", sender: self)
             }
         }
     }
@@ -69,7 +69,6 @@ class LoginViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 
 }
 
