@@ -94,7 +94,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="95" id="zGj-gS-nK6">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChatTableViewCell" rowHeight="95" id="zGj-gS-nK6" customClass="ChatTableViewCell" customModule="Parse_Chat" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="95"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zGj-gS-nK6" id="lQQ-pg-pu3">
@@ -115,6 +115,9 @@
                                                 <constraint firstItem="vPg-QB-xKT" firstAttribute="top" secondItem="lQQ-pg-pu3" secondAttribute="top" constant="8" id="gPH-df-HXM"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="messageLabel" destination="vPg-QB-xKT" id="3B2-dE-USc"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -130,6 +133,9 @@
                     <navigationItem key="navigationItem" title="Chat" id="khK-ou-Er6">
                         <barButtonItem key="leftBarButtonItem" systemItem="compose" id="hiJ-C2-lid"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="chatTableView" destination="9x6-KQ-gF3" id="bum-yc-vyA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CTV-1O-gwf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
