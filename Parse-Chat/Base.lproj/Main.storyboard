@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -106,7 +105,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OAv-hB-1BB">
                                                     <rect key="frame" x="8" y="8" width="359" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="25" id="bgg-HI-sV0"/>
+                                                        <constraint firstAttribute="height" constant="25" id="kON-EZ-geq"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -120,13 +119,13 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="vPg-QB-xKT" firstAttribute="trailing" secondItem="lQQ-pg-pu3" secondAttribute="trailingMargin" constant="8" id="HML-1r-qYe"/>
-                                                <constraint firstItem="vPg-QB-xKT" firstAttribute="leading" secondItem="lQQ-pg-pu3" secondAttribute="leadingMargin" constant="8" id="JRP-e5-KMR"/>
-                                                <constraint firstAttribute="trailing" secondItem="OAv-hB-1BB" secondAttribute="trailing" constant="8" id="LjF-xh-L2c"/>
-                                                <constraint firstItem="OAv-hB-1BB" firstAttribute="leading" secondItem="lQQ-pg-pu3" secondAttribute="leading" constant="8" id="Se7-ze-izV"/>
-                                                <constraint firstItem="vPg-QB-xKT" firstAttribute="bottom" secondItem="lQQ-pg-pu3" secondAttribute="bottomMargin" constant="8" id="c9g-AR-Ljc"/>
-                                                <constraint firstItem="OAv-hB-1BB" firstAttribute="top" secondItem="lQQ-pg-pu3" secondAttribute="top" constant="8" id="vMk-pY-x9P"/>
-                                                <constraint firstItem="vPg-QB-xKT" firstAttribute="top" secondItem="OAv-hB-1BB" secondAttribute="bottom" constant="5" id="wtF-RE-tiD"/>
+                                                <constraint firstAttribute="bottom" secondItem="vPg-QB-xKT" secondAttribute="bottom" constant="8" id="0R4-KI-2BL"/>
+                                                <constraint firstItem="vPg-QB-xKT" firstAttribute="leading" secondItem="lQQ-pg-pu3" secondAttribute="leading" constant="8" id="8AI-R3-TSt"/>
+                                                <constraint firstItem="OAv-hB-1BB" firstAttribute="top" secondItem="lQQ-pg-pu3" secondAttribute="top" constant="8" id="DFy-Wi-BB1"/>
+                                                <constraint firstAttribute="trailing" secondItem="vPg-QB-xKT" secondAttribute="trailing" constant="8" id="DTb-gd-8k1"/>
+                                                <constraint firstItem="vPg-QB-xKT" firstAttribute="top" secondItem="OAv-hB-1BB" secondAttribute="bottom" constant="5" id="Xtr-Qg-IwL"/>
+                                                <constraint firstAttribute="trailing" secondItem="OAv-hB-1BB" secondAttribute="trailing" constant="8" id="cOc-5R-l1P"/>
+                                                <constraint firstItem="OAv-hB-1BB" firstAttribute="leading" secondItem="lQQ-pg-pu3" secondAttribute="leading" constant="8" id="pf4-ox-K91"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
