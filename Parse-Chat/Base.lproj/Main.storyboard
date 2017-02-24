@@ -99,7 +99,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="95"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zGj-gS-nK6" id="lQQ-pg-pu3">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="94"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="94.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vPg-QB-xKT">
@@ -134,6 +134,9 @@
                                         <rect key="frame" x="321" y="14" width="46" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Send"/>
+                                        <connections>
+                                            <action selector="handleSendButton:" destination="Am7-CI-VnM" eventType="touchUpInside" id="jCl-8g-sGK"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -157,7 +160,6 @@
                         <outlet property="growingTextView" destination="daw-ta-pQA" id="VP3-3S-AEO"/>
                         <outlet property="inputContainerView" destination="gFw-Vx-rdi" id="H3E-v0-kmY"/>
                         <outlet property="inputContainerViewBottom" destination="sB6-pU-bKJ" id="Qty-CC-fXZ"/>
-                        <outlet property="send" destination="lDO-BS-O5Q" id="MV1-Eu-fbw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CTV-1O-gwf" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -15,7 +15,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     // OUTLETS
     @IBOutlet weak var chatTableView: UITableView!
     @IBOutlet weak var growingTextView: NextGrowingTextView!
-    @IBOutlet weak var send: UIButton!
+    
     @IBOutlet weak var inputContainerView: UIView!
     @IBOutlet weak var inputContainerViewBottom: NSLayoutConstraint!
     
