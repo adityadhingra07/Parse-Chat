@@ -78,6 +78,10 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         let cell = chatTableView.dequeueReusableCell(withIdentifier: "ChatTableViewCell", for: indexPath) as! ChatTableViewCell
         let message = self.messages[indexPath.row]
         let text = message["text"] as? String
+        if (message["username"] != nil) {
+            cell.useremail.text = message["username"] as? String
+        }
+        
         
         cell.messageLabel?.text = text
         return cell
@@ -90,6 +94,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     @IBAction func handleSendButton(_ sender: AnyObject) {
         var message = PFObject(className: "Message")
+        message["username"] = PFUser.current()?.username
         message["text"] = self.growingTextView.text
         message.saveInBackground { (succeeded, error) in
             if (succeeded) {
