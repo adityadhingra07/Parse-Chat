@@ -29,7 +29,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         chatTableView.dataSource = self
         chatTableView.delegate = self
         
-        getParseMessage()
+        Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: "getParseMessage", userInfo: nil, repeats: true)
         
         // Do any additional setup after loading the view.
         NotificationCenter.default.addObserver(self, selector: #selector(ChatViewController.keyboardWillShow(_:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
@@ -62,7 +62,6 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
                 
                 if let message_objects = objects {
                     self.messages = message_objects
-                    print(message_objects)
                     self.chatTableView.reloadData()
                 }
             } else {
