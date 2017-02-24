@@ -89,6 +89,15 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     
     @IBAction func handleSendButton(_ sender: AnyObject) {
+        var message = PFObject(className: "Message")
+        message["text"] = self.growingTextView.text
+        message.saveInBackground { (succeeded, error) in
+            if (succeeded) {
+                // The object has been saved.
+            } else {
+                
+            }
+        }
         self.growingTextView.text = ""
         self.view.endEditing(true)
     }
